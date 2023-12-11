@@ -1,5 +1,5 @@
 {
-  "name": "vuetify-podcast",
+  "name": "PodcastV3",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,6 @@
     "lint": "eslint . --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/font": "7.0.96",
     "core-js": "^3.29.0",
     "roboto-fontface": "*",

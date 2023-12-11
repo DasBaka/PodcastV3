@@ -1,46 +1,20 @@
+/**
+ * main.ts
+ *
+ * Bootstraps Vuetify and other plugins then mounts the App`
+ */
+
+// Plugins
+import { registerPlugins } from '@/plugins'
+
+// Components
+import App from './App.vue'
+
 // Composables
-import { createRouter, createWebHistory } from 'vue-router'
+import { createApp } from 'vue'
 
-const routes = [
-  {
-    path: '/',
-    component: () => import('@/layouts/default/Default.vue'),
-    children: [
-      {
-        path: '',
-        name: 'Home',
-        // route level code-splitting
-        // this generates a separate chunk (Home-[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import('@/views/Player.vue'),
-      },
-      {
-        path: 'podcasts', name: 'Podcasts',
-        component: () => import('@/views/Podcasts.vue'),
-      },
-      {
-        path: 'filters', name: 'Filters',
-        component: () => import('@/views/Filters.vue'),
-      },
-      {
-        path: 'profile', name: 'Profile',
-        component: () => import('@/views/Profile.vue'),
-      },
-      {
-        path: 'player', name: 'Player', 
-        component: () => import('@/views/Player.vue'),
-      },
-      {
-        path: 'queue', name:'Queue',
-        component: () => import('@/views/Queue.vue'),
-      },
-    ],
-  },
-]
+const app = createApp(App)
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes,
-})
+registerPlugins(app)
 
-export default router
+app.mount('#app')
