@@ -4,14 +4,15 @@
 
     <v-main>
       <router-view />
-      <v-bottom-navigation>
-        <v-btn value="podcasts" :to="{name: 'Podcasts'}">
+      <v-bottom-navigation class="pb-2">
+        <div class="d-flex w-100  justify-space-evenly">
+        <v-btn class="d-flex" value="podcasts"  style="font-size: x-small" :to="{name: 'Podcasts'}">
           <v-icon>mdi-dots-grid</v-icon>
       
           <span>Podcasts</span>
         </v-btn>
       
-        <v-btn value="filters" :to="{name: 'Filters'}">
+        <v-btn class="d-flex" value="filters" style="font-size: x-small" :to="{name: 'Filters'}">
           <v-icon>mdi-filter-multiple</v-icon>
       
           <span>Filters</span>
@@ -19,24 +20,24 @@
       
         
     
-        <v-btn value="profile" :to="{name: 'Profile'}">
+        <v-btn class="d-flex" value="profile"  style="font-size: x-small" :to="{name: 'Profile'}">
           <v-icon>mdi-account</v-icon>
       
           <span>Profile</span>
         </v-btn>
     
-        <v-btn value="player" :to="{name: 'Player'}">
+        <v-btn class="d-flex" value="player" style="font-size: x-small" :to="{name: 'Player'}">
           <v-icon>mdi-play</v-icon>
       
           <span>Player</span>
         </v-btn>
   
-        <v-btn value="queue" :to="{name: 'Queue'}">
+        <v-btn class="d-flex" value="queue" style="font-size: xx-small" :to="{name: 'Queue'}">
           <v-icon>mdi-format-list-bulleted-square</v-icon>
       
           <span>Queue</span>
         </v-btn>
-    
+      </div>
       </v-bottom-navigation>
     </v-main>
   </v-app>

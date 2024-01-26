@@ -25,7 +25,7 @@
             </div>
           </div>
 
-          <v-btn icon="mdi-pan-vertical"></v-btn>
+          <v-btn icon="mdi-arrow-expand-down"></v-btn>
         </div>
 
         <v-divider
