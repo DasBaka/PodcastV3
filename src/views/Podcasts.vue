@@ -1,6 +1,6 @@
 <template>
 <div class="podcasts">
-
+  
     <v-app-bar :elevation="5">
         <v-app-bar-title>podcasts</v-app-bar-title>
         <template v-slot:append>
@@ -117,5 +117,5 @@
 </template>
 
 <script lang="ts" setup>
-
+  
 </script>
