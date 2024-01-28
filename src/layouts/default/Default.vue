@@ -4,7 +4,7 @@
 
     <v-main>
       <router-view />
-      <v-bottom-navigation class="pb-2">
+      <v-bottom-navigation class="height: 150px">
         <div class="d-flex w-100  justify-space-evenly">
         <v-btn class="d-flex" value="podcasts"  style="font-size: x-small" :to="{name: 'Podcasts'}">
           <v-icon>mdi-dots-grid</v-icon>
