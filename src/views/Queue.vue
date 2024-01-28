@@ -25,7 +25,9 @@
             </div>
           </div>
 
-          <v-btn icon="mdi-arrow-expand-down"></v-btn>
+          <v-btn icon="mdi-arrow-expand-down" size="x-small">
+            
+          </v-btn>
         </div>
 
         <v-divider

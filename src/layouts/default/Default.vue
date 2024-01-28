@@ -9,33 +9,33 @@
         <v-btn class="d-flex" value="podcasts"  style="font-size: x-small" :to="{name: 'Podcasts'}">
           <v-icon>mdi-dots-grid</v-icon>
       
-          <span>Podcasts</span>
+          <span></span>
         </v-btn>
       
-        <v-btn class="d-flex" value="filters" style="font-size: x-small" :to="{name: 'Filters'}">
+        <v-btn value="filters" style="font-size: x-small" :to="{name: 'Filters'}">
           <v-icon>mdi-filter-multiple</v-icon>
       
-          <span>Filters</span>
+          <span></span>
         </v-btn>
       
         
     
-        <v-btn class="d-flex" value="profile"  style="font-size: x-small" :to="{name: 'Profile'}">
+        <v-btn  value="profile"  style="font-size: x-small" :to="{name: 'Profile'}">
           <v-icon>mdi-account</v-icon>
       
-          <span>Profile</span>
+          <span></span>
         </v-btn>
     
-        <v-btn class="d-flex" value="player" style="font-size: x-small" :to="{name: 'Player'}">
+        <v-btn  value="player" style="font-size: x-small" :to="{name: 'Player'}">
           <v-icon>mdi-play</v-icon>
       
-          <span>Player</span>
+          <span></span>
         </v-btn>
   
-        <v-btn class="d-flex" value="queue" style="font-size: xx-small" :to="{name: 'Queue'}">
+        <v-btn  value="queue" style="font-size: xx-small" :to="{name: 'Queue'}">
           <v-icon>mdi-format-list-bulleted-square</v-icon>
       
-          <span>Queue</span>
+          <span></span>
         </v-btn>
       </div>
       </v-bottom-navigation>
